@@ -18,6 +18,8 @@ namespace MutithreadingProject
             thread2.Start();
 
 
+            thread1.Join();
+            thread2.Join();
 
         }
 
@@ -25,23 +27,20 @@ namespace MutithreadingProject
         {
             for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} :  {i}");
+                Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} : {i}");
                 Thread.Sleep(2000);
-
             }
-
         }
 
 
-        static void PrintLetters()
+        public static void PrintLetters()
         {
             for (char c = 'A'; c <= 'E'; c++)
             {
-                Console.WriteLine(c);
+                Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} : {c}");
                 Thread.Sleep(2000);
             }
         }
-
 
 
     }
