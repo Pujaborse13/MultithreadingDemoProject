@@ -2,20 +2,37 @@
 
 internal class Program
 {
-    //public static void Main(string[] args)
-    //{
-    //    SynchronousDemo ex = new SynchronousDemo();
-    //    ex.MyTask();
+    /*
+    //  1. SynchronousDemo Example 
+    public static void Main(string[] args)
+    {
+        SynchronousDemo ex = new SynchronousDemo();
+        ex.MyTask();
 
-    //}
+    }
 
 
-
+       //  2. AsynchronousDemo Example 
     static async Task Main()
     {
-        AsynchronousDemo demo = new AsynchronousDemo();
+        AysnchronousDemo demo = new AysnchronousDemo();
         await demo.MyTask();
     }
+    */
+
+    //  3. MutithreadingDemo Example 
+    static void Main(string[] args)  
+    {
+
+        MultithreadingDemo demo = new MultithreadingDemo();
+        demo.AllTask();
+
+    }
+    
+
+
+
+
 
 
 
