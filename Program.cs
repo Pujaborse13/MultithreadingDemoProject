@@ -18,7 +18,7 @@ internal class Program
         AysnchronousDemo demo = new AysnchronousDemo();
         await demo.MyTask();
     }
-    */
+   
 
     //  3. MutithreadingDemo Example 
     static void Main(string[] args)  
@@ -28,7 +28,19 @@ internal class Program
         demo.AllTask();
 
     }
-    
+
+     */
+
+    //TPL Demo Example
+    static async Task Main(string[] args)  
+    {
+        TplDemo tplDemo = new TplDemo();
+        await tplDemo.AllTask();
+
+    }
+
+
+
 
 
 
